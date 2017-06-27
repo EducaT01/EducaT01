@@ -12,8 +12,6 @@ import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
-import javax.persistence.NamedQueries;
-import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
@@ -24,8 +22,7 @@ import javax.validation.constraints.Size;
  */
 @Entity
 @Table(name = "programa_curso", catalog = "educat", schema = "")
-@NamedQueries({
-    @NamedQuery(name = "ProgramaCurso.findAll", query = "SELECT p FROM ProgramaCurso p")})
+
 public class ProgramaCurso implements Serializable {
 
     private static final long serialVersionUID = 1L;
