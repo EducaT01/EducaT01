@@ -36,28 +36,52 @@ public class Programa implements Serializable {
     @NotNull
     @Size(min = 1, max = 8)
     @Column(name = "COD_PROGRAMA")
+    /**
+     * Clave primaria que identifica al programa.
+     */
     private String codPrograma;
     @Basic(optional = false)
     @NotNull
     @Size(min = 1, max = 100)
     @Column(name = "NOMBRE")
+    /**
+     * Es el nombre que recibe el programa por los temas que llega a tratar.
+     */
     private String nombre;
     @Size(max = 4000)
     @Column(name = "DESCRIPCION")
+    /**
+     * Es la descripción que tiene ese curso de una manera mucho más específica.
+     */
     private String descripcion;
     @Basic(optional = false)
     @NotNull
     @Column(name = "DURACION")
+    /**
+     * Es el número de días que dura cada uno de los programas.
+     */
     private short duracion;
     @Column(name = "FECHA_INICIO")
     @Temporal(TemporalType.DATE)
+    /**
+     * Fecha en la que se tiene previsto empezar el programa.
+     */
     private Date fechaInicio;
     @Column(name = "FECHA_FIN")
     @Temporal(TemporalType.DATE)
+    /**
+     * Fecha en la que se tiene previsto finalizar el programa.
+     */
     private Date fechaFin;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "programa")
+    /**
+     * Lista de programas.
+     */
     private List<ProgramaCurso> programaCursoList;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "programa")
+    /**
+     * Lista de las relaciones que existe entre los alumnos y los programas.
+     */
     private List<ProgramaAlumno> programaAlumnoList;
 
     public Programa() {
