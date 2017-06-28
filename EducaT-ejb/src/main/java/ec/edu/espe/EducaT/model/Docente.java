@@ -19,13 +19,14 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 /**
+ * Clase encargada de obtener los datos de la base de datos EducaTBD.
  *
- * @author Adrián
+ * @author Adrián Calvopiña, Jonathan Almeida, David Suarez.
+ * @version 1.0
  */
+
 @Entity
 @Table(name = "docente", catalog = "educat", schema = "")
-@NamedQueries({
-    @NamedQuery(name = "Docente.findAll", query = "SELECT d FROM Docente d")})
 public class Docente implements Serializable {
 
     private static final long serialVersionUID = 1L;

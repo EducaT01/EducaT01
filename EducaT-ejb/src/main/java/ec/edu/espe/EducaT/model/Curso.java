@@ -20,9 +20,12 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 /**
+ * Clase encargada de obtener los datos de la base de datos EducaTBD.
  *
- * @author Adrián
+ * @author Adrián Calvopiña, Jonathan Almeida, David Suarez.
+ * @version 1.0
  */
+
 @Entity
 @Table(name = "curso", catalog = "educat", schema = "")
 @NamedQueries({

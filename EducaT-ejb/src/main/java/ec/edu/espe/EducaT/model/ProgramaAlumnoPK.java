@@ -13,9 +13,12 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 /**
+ * Clase encargada de obtener los datos de la base de datos EducaTBD.
  *
- * @author Adrián
+ * @author Adrián Calvopiña, Jonathan Almeida, David Suarez.
+ * @version 1.0
  */
+
 @Embeddable
 public class ProgramaAlumnoPK implements Serializable {
 
