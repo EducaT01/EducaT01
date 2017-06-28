@@ -13,8 +13,6 @@ import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.NamedQueries;
-import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
@@ -31,8 +29,6 @@ import javax.validation.constraints.Size;
 
 @Entity
 @Table(name = "alumno", catalog = "educat", schema = "")
-@NamedQueries({
-    @NamedQuery(name = "Alumno.findAll", query = "SELECT a FROM Alumno a")})
 public class Alumno implements Serializable {
 
     private static final long serialVersionUID = 1L;

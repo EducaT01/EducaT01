@@ -17,8 +17,6 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
-import javax.persistence.NamedQueries;
-import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
@@ -35,8 +33,6 @@ import javax.validation.constraints.Size;
 
 @Entity
 @Table(name = "capacitacion", catalog = "educat", schema = "")
-@NamedQueries({
-    @NamedQuery(name = "Capacitacion.findAll", query = "SELECT c FROM Capacitacion c")})
 public class Capacitacion implements Serializable {
 
     private static final long serialVersionUID = 1L;
