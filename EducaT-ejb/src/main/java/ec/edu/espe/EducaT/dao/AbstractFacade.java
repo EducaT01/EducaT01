@@ -1,6 +1,8 @@
 /**
  * 
  * Este es mi comentario de la clase abstract
+ * Esta clase es la clase abstracta
+ * By Jonathan Almeida
  */
 package ec.edu.espe.EducaT.dao;
 
