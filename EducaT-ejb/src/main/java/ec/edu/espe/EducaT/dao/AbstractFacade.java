@@ -1,4 +1,7 @@
-
+/**
+ * 
+ * Este es mi comentario de la clase abstract
+ */
 package ec.edu.espe.EducaT.dao;
 
 import java.util.List;
