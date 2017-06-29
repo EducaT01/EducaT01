@@ -12,11 +12,10 @@ import javax.persistence.PersistenceContext;
 
 /**
  *
- * @author dovac
+ * @author USER
  */
 @Stateless
 public class CapacitacionFacade extends AbstractFacade<Capacitacion> {
-
     @PersistenceContext(unitName = "EducaT_EducaT-ejb_ejb_1.0-SNAPSHOTPU")
     private EntityManager em;
 

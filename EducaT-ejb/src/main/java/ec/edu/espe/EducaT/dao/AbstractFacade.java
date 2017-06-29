@@ -1,4 +1,7 @@
-
+/**
+ * Esta clase es la clase abstracta
+ * By Jonathan Almeida
+ */
 package ec.edu.espe.EducaT.dao;
 
 import java.util.List;
