@@ -29,7 +29,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
 /**
- *
+ * Clase que contiene metodos de acceso a la clase de entidad ProgramaAlumno.
  * @author Adrián
  */
 @Stateless
