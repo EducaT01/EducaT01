@@ -11,6 +11,9 @@
     <module>EducaT-web</module>
     <module>EducaT-ejb</module>
   </modules>
+  <scm>
+  <connection>scm:git:https://github.com/EducaT01/EducaT01.gitt</connection>
+</scm>
   <reporting>
         <plugins>
             <plugin>
