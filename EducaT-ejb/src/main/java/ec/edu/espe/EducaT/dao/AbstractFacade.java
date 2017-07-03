@@ -1,7 +1,7 @@
 /*
  * The MIT License
  *
- * Copyright 2017 Adrián.
+ * Copyright 2017 Jonathan.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -27,8 +27,8 @@ import java.util.List;
 import javax.persistence.EntityManager;
 
 /**
- *
- * @author Adrián
+ * Clase que contiene las operaciones de CRUD para las entidades.
+ * @author Jonathan
  */
 public abstract class AbstractFacade<T> {
 

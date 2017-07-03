@@ -1,7 +1,7 @@
 /*
  * The MIT License
  *
- * Copyright 2017 Adrián.
+ * Copyright 2017 Jonathan.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -29,8 +29,8 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
 /**
- *
- * @author Adrián
+ * Clase que contiene metodos de acceso a la clase de entidad CapacitacionAlumno.
+ * @author Jonathan
  */
 @Stateless
 public class CapacitacionAlumnoFacade extends AbstractFacade<CapacitacionAlumno> {
