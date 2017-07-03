@@ -1,7 +1,7 @@
 /*
  * The MIT License
  *
- * Copyright 2017 Adrián.
+ * Copyright 2017 David Suarez.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -30,7 +30,7 @@ import javax.persistence.PersistenceContext;
 
 /**
  *
- * @author Adrián
+ * @author author David
  */
 @Stateless
 public class DocenteFacade extends AbstractFacade<Docente> {
