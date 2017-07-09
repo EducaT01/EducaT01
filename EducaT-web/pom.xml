@@ -6,7 +6,6 @@
         <groupId>EducaT</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-
     <groupId>EducaT</groupId>
     <artifactId>EducaT-web</artifactId>
     <version>1.0-SNAPSHOT</version>
