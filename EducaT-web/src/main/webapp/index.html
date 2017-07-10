@@ -1,10 +1,77 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
     <head>
-        <title>Start Page</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Inicio</title>
+        <style>
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #333;
+            }
+
+            li {
+                float: left;
+            }
+
+            li a {
+                display: inline-block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            li a:hover {
+                background-color: #111;
+            }
+        </style>
     </head>
-    <body>
-        <h1>Aqui cienee el Homepage</h1>
+    <body id="top">
+        <form id="form1">
+            <div class="contenedor">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="alumnos.xhtml">Alumno</a></li>
+                    <li><a href="docentes.xhtml">Docente</a></li>
+                    <li><a href="cursos.xhtml">Curso</a></li>
+                </ul> 
+            </div> 
+            <h1> Centro Educativo EducaT </h1>
+            <p>Sistema que servir&aacute; para la gesti&oacute;n de estudiantes interesados en ciertos 
+                programas que se ofertaran en una escuela. </p>
+            <br></br>
+            <div align="center">
+                <table width="500" border="1">
+                    <tr>
+                        <td>
+                            <div align="center"><br></br>
+                                <a href= "alumnos.xhtml">Listado Alumnos</a><br></br>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div align="center"><br></br>
+                                <a href= "docentes.xhtml">Listado Docentes</a><br></br>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><div align="center"><br></br>
+                                <a href= "cursos.xhtml">Listado Cursos</a><br></br>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <footer>
+                <div class="contenedor">
+                    <p class="copy"> EducaT &copy; 2017</p>
+                </div>
+            </footer>
+        </form>
     </body>
 </html>

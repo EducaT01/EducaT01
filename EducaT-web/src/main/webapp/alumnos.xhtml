@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"  
+      xmlns:h="http://java.sun.com/jsf/html"  
+      xmlns:f="http://java.sun.com/jsf/core"  
+      xmlns:p="http://primefaces.org/ui"> 
+    <h:head>
+        <title>Listado de Alumnos</title>
+                <style>
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #333;
+            }
+
+            li {
+                float: left;
+            }
+
+            li a {
+                display: inline-block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            li a:hover {
+                background-color: #111;
+            }
+        </style>
+    </h:head>
+    <h:body>
+        <div class="contenedor">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="alumnos.xhtml">Alumno</a></li>
+                <li><a href="docentes.xhtml">Docente</a></li>
+                <li><a href="cursos.xhtml">Curso</a></li>
+            </ul> 
+        </div>
+        <div class="contenedor">
+            <h1>Listado de Estudiantes</h1>
+            <br></br>
+            <p:dataTable var = "alumno" value ="#{alumnoBean.alumno}" rows="5"
+                         paginator="true"
+                         paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}"
+                         rowsPerPageTemplate="5,10,15">
+                <p:column headerText="Codigo">
+                    #{alumno.cod_alumno}
+                </p:column>
+                <p:column headerText="Nombre">
+                    #{alumno.nombre}
+                </p:column>
+                <p:column headerText="Direccion">
+                    #{alumno.direccion}
+                </p:column>
+                <p:column headerText="Telefono">
+                    #{alumno.telefono}
+                </p:column>
+                <p:column headerText="Correo Electronico">
+                    #{alumno.correo_electronico}
+                </p:column>
+                <p:column headerText="Fecha Nacimiento">
+                    #{alumno.fecha_nacimiento}
+                </p:column>
+                <p:column headerText="Genero">
+                    #{alumno.genero}
+                </p:column>
+            </p:dataTable>
+        </div>
+        <footer>
+            <div class="contenedor">
+                <p class="copy"> EducaT &copy; 2017</p>
+            </div>
+        </footer>
+    </h:body>
+</html>
+
