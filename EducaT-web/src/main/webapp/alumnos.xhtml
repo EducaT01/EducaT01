@@ -36,9 +36,9 @@
         <div class="contenedor">
             <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="alumnos.xhtml">Alumno</a></li>
-                <li><a href="docentes.xhtml">Docente</a></li>
-                <li><a href="cursos.xhtml">Curso</a></li>
+                <li><a href="faces/alumnos.xhtml">Alumno</a></li>
+                <li><a href="faces/docentes.xhtml">Docente</a></li>
+                <li><a href="faces/cursos.xhtml">Curso</a></li>
             </ul> 
         </div>
         <div class="contenedor">
@@ -49,7 +49,7 @@
                          paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}"
                          rowsPerPageTemplate="5,10,15">
                 <p:column headerText="Codigo">
-                    #{alumno.cod_alumno}
+                    #{alumno.codAlumno}
                 </p:column>
                 <p:column headerText="Nombre">
                     #{alumno.nombre}
@@ -61,10 +61,10 @@
                     #{alumno.telefono}
                 </p:column>
                 <p:column headerText="Correo Electronico">
-                    #{alumno.correo_electronico}
+                    #{alumno.correoElectronico}
                 </p:column>
                 <p:column headerText="Fecha Nacimiento">
-                    #{alumno.fecha_nacimiento}
+                    #{alumno.fechaNacimiento}
                 </p:column>
                 <p:column headerText="Genero">
                     #{alumno.genero}
