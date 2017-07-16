@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8' ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"  
-    xmlns:h="http://java.sun.com/jsf/html"  
-    xmlns:f="http://java.sun.com/jsf/core"  
-    xmlns:p="http://primefaces.org/ui"> 
+      xmlns:h="http://java.sun.com/jsf/html"  
+      xmlns:f="http://java.sun.com/jsf/core"  
+      xmlns:p="http://primefaces.org/ui"> 
     <h:head>
         <title>Listado de Cursos</title>
-                <style>
+        <style>
             ul {
                 list-style-type: none;
                 margin: 0;
@@ -34,46 +34,45 @@
     </h:head>
     <h:body>
         <div class="contenedor">
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="faces/alumnos.xhtml">Alumno</a></li>
-                    <li><a href="faces/docentes.xhtml">Docente</a></li>
-                    <li><a href="faces/cursos.xhtml">Curso</a></li>
-                </ul> 
-            </div>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="faces/alumnos.xhtml">Alumno</a></li>
+                <li><a href="faces/docentes.xhtml">Docente</a></li>
+                <li><a href="faces/cursos.xhtml">Curso</a></li>
+            </ul> 
+        </div>
         <div class="contenedor">
             <h1>Listado de Cursos</h1>
             <br></br>
-        <p:dataTable var = "curso" value ="#{cursoBean.curso}" rows="5"
+            <p:dataTable var = "curso" value ="#{cursoBean.curso}" rows="5"
                          paginator="true"
                          paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}"
                          rowsPerPageTemplate="5,10,15">
-            <p:column headerText="Codigo">
-                #{curso.codCurso}
-            </p:column>
-            <p:column headerText="Nombre">
-                #{curso.nombre}
-            </p:column>
-            <p:column headerText="Objetivo">
-                #{curso.objetivo}
-            </p:column>
-            <p:column headerText="Descripcion">
-                #{curso.descripcion}
-            </p:column>
-            <p:column headerText="Duracion">
-                #{curso.duracion}
-            </p:column>
-            <p:column headerText="Estado">
-                #{curso.estado}
-            </p:column>
-        </p:dataTable>
+                <p:column headerText="Codigo">
+                    #{curso.codCurso}
+                </p:column>
+                <p:column headerText="Nombre">
+                    #{curso.nombre}
+                </p:column>
+                <p:column headerText="Objetivo">
+                    #{curso.objetivo}
+                </p:column>
+                <p:column headerText="Descripcion">
+                    #{curso.descripcion}
+                </p:column>
+                <p:column headerText="Duracion">
+                    #{curso.duracion}
+                </p:column>
+                <p:column headerText="Estado">
+                    #{curso.estado}
+                </p:column>
+            </p:dataTable>
         </div>
         <footer>
-            <footer>
-                <div class="contenedor">
-                    <p class="copy"> EducaT &copy; 2017</p>
-                </div>
-            </footer>
+            <div class="contenedor">
+                <p class="copy"> EducaT &copy; 2017</p>
+            </div>
+        </footer>
     </h:body>
 </html>
 
