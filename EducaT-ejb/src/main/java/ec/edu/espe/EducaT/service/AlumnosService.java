@@ -31,7 +31,7 @@ import javax.ejb.Stateless;
 import javax.ejb.LocalBean;
 
 /**
- *
+ * Clase de servicios para la clase de persistencia Alumno.
  * @author dovac
  */
 @Stateless
