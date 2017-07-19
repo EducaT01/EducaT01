@@ -161,7 +161,7 @@ public class Alumno implements Serializable {
 
     /**
     * Metodo get para mostrar el atributo codAlumno.
-    * @return codAlumno.
+    * @return codAlumno
     */
     public String getCodAlumno() {
         return codAlumno;
@@ -169,7 +169,7 @@ public class Alumno implements Serializable {
     
     /**
     * Metodo set para modificar el atributo codAlumno.
-    * @param codAlumno.
+    * @param codAlumno
     */
     public void setCodAlumno(String codAlumno) {
         this.codAlumno = codAlumno;
@@ -177,7 +177,7 @@ public class Alumno implements Serializable {
 
     /**
     * Metodo get para mostrar el atributo nombre.    
-    * @return nombre;
+    * @return nombre
     */
     public String getNombre() {
         return nombre;
@@ -185,7 +185,7 @@ public class Alumno implements Serializable {
     
     /**
     * Metodo set para modificar el atributo nombre.
-    * @param nombre.
+    * @param nombre
     */
     public void setNombre(String nombre) {
         this.nombre = nombre;
@@ -193,7 +193,7 @@ public class Alumno implements Serializable {
 
     /**
     * Metodo get para mostrar el atributo direccion.
-    * @return direccion.
+    * @return direccion
     */
     public String getDireccion() {
         return direccion;
@@ -201,7 +201,7 @@ public class Alumno implements Serializable {
 
     /**
     * Metodo set para modificar el atributo direccion.
-    * @param direccion.
+    * @param direccion
     */
     public void setDireccion(String direccion) {
         this.direccion = direccion;
@@ -209,7 +209,7 @@ public class Alumno implements Serializable {
 
     /**
     * Metodo get para mostrar el atributo telefono.
-    * @return telefono.
+    * @return telefono
     */
     public String getTelefono() {
         return telefono;
@@ -217,7 +217,7 @@ public class Alumno implements Serializable {
     
     /**
     * Metodo set para modificar el atributo telefono.
-    * @param telefono.
+    * @param telefono
     */
     public void setTelefono(String telefono) {
         this.telefono = telefono;
@@ -225,7 +225,7 @@ public class Alumno implements Serializable {
 
     /**
     * Metodo get para mostrar el atributo correoElectronico.
-    * @return correoElectronico.
+    * @return correoElectronico
     */
     public String getCorreoElectronico() {
         return correoElectronico;
@@ -233,7 +233,7 @@ public class Alumno implements Serializable {
     
     /**
     * Metodo set para modificar el atributo correoElectronico.
-    * @param correoElectronico.
+    * @param correoElectronico
     */
     public void setCorreoElectronico(String correoElectronico) {
         this.correoElectronico = correoElectronico;
@@ -241,7 +241,7 @@ public class Alumno implements Serializable {
 
     /**
     * Metodo get para mostrar el atributo fechaNacimiento.
-    * @return fechaNacimiento.
+    * @return fechaNacimiento
     */
     public Date getFechaNacimiento() {
         return fechaNacimiento;
@@ -249,7 +249,7 @@ public class Alumno implements Serializable {
 
     /**
     * Metodo set para modificar el atributo fechaNacimiento.
-    * @param fechaNacimiento.
+    * @param fechaNacimiento
     */
     public void setFechaNacimiento(Date fechaNacimiento) {
         this.fechaNacimiento = fechaNacimiento;
@@ -257,7 +257,7 @@ public class Alumno implements Serializable {
     
     /**
     * Metodo get para mostrar el atributo genero.
-    * @return genero.
+    * @return genero
     */
     public String getGenero() {
         return genero;
@@ -265,7 +265,7 @@ public class Alumno implements Serializable {
     
     /**
     * Metodo set para modificar el atributo genero.
-    * @param genero.
+    * @param genero
     */
     public void setGenero(String genero) {
         this.genero = genero;
@@ -273,7 +273,7 @@ public class Alumno implements Serializable {
 
     /**
     * Metodo get para mostrar el atributo capacitacionAlumnoCollection.
-    * @return capacitacionAlumnoList.
+    * @return capacitacionAlumnoList
     */
     public List<CapacitacionAlumno> getCapacitacionAlumnoList() {
         return capacitacionAlumnoList;
@@ -289,7 +289,7 @@ public class Alumno implements Serializable {
 
     /**
     * Metodo get para mostrar el atributo programaAlumnoCollection.    
-    * @return programaAlumnoList.
+    * @return programaAlumnoList
     */
     public List<ProgramaAlumno> getProgramaAlumnoList() {
         return programaAlumnoList;
@@ -297,7 +297,7 @@ public class Alumno implements Serializable {
 
     /**
     * Metodo set para modificar el atributo programaAlumnoCollection.
-    * @param programaAlumnoList.
+    * @param programaAlumnoList
     */
     public void setProgramaAlumnoList(List<ProgramaAlumno> programaAlumnoList) {
         this.programaAlumnoList = programaAlumnoList;
@@ -305,7 +305,7 @@ public class Alumno implements Serializable {
     
     /**
     * Metodo hasCode sobreescrito.
-    * @return hash.
+    * @return hash
     */
     @Override
     public int hashCode() {
@@ -316,8 +316,8 @@ public class Alumno implements Serializable {
 
     /**
     * Metodo sobreescrito equals.
-    * @param object.
-    * @return boolen.
+    * @param object
+    * @return boolen
     */
     @Override
     public boolean equals(Object object) {

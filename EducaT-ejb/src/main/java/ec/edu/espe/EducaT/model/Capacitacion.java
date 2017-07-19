@@ -30,7 +30,6 @@ import javax.validation.constraints.Size;
  * @author Adrián Calvopiña, Jonathan Almeida, David Suarez.
  * @version 1.0
  */
-
 @Entity
 @Table(name = "capacitacion", catalog = "educat", schema = "")
 public class Capacitacion implements Serializable {
@@ -65,28 +64,30 @@ public class Capacitacion implements Serializable {
     @Size(min = 1, max = 3)
     @Column(name = "ESTADO")
     /**
-     * Estado en la que se encuentra cada una de las capacitaciones, 
-     * estos estados pueden ser: "inscripciones", "en progreso", 
-     * "finalizada", "cancelada" y "definida".
+     * Estado en la que se encuentra cada una de las capacitaciones, estos
+     * estados pueden ser: "inscripciones", "en progreso", "finalizada",
+     * "cancelada" y "definida".
      */
     private String estado;
     @Basic(optional = false)
     @NotNull
     @Column(name = "CAPACIDAD")
     /**
-     * Es la capacidada en numero de personas que pueden recibir la capacitación.
+     * Es la capacidada en numero de personas que pueden recibir la
+     * capacitación.
      */
     private short capacidad;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "capacitacion")
     /**
-     * Lista que almacena la relación entre lo que son los alumnos 
-     * y las capacitaciones que pueden llegar a tomar.
+     * Lista que almacena la relación entre lo que son los alumnos y las
+     * capacitaciones que pueden llegar a tomar.
      */
     private List<CapacitacionAlumno> capacitacionAlumnoList;
     @JoinColumn(name = "COD_CURSO", referencedColumnName = "COD_CURSO")
     @ManyToOne(optional = false)
     /**
-     * Clave primaria que corresponde al ID que tiene el curso en la institución.
+     * Clave primaria que corresponde al ID que tiene el curso en la
+     * institución.
      */
     private Curso codCurso;
     @JoinColumn(name = "COD_DOCENTE", referencedColumnName = "COD_DOCENTE")
@@ -99,10 +100,21 @@ public class Capacitacion implements Serializable {
     public Capacitacion() {
     }
 
+    /**
+     *
+     * @param codCapacitacion
+     */
     public Capacitacion(Integer codCapacitacion) {
         this.codCapacitacion = codCapacitacion;
     }
-
+    /**
+     * 
+     * @param codCapacitacion
+     * @param fechaInicio
+     * @param fechaFin
+     * @param estado
+     * @param capacidad 
+     */
     public Capacitacion(Integer codCapacitacion, Date fechaInicio, Date fechaFin, String estado, short capacidad) {
         this.codCapacitacion = codCapacitacion;
         this.fechaInicio = fechaInicio;
@@ -114,7 +126,10 @@ public class Capacitacion implements Serializable {
     public Integer getCodCapacitacion() {
         return codCapacitacion;
     }
-
+    /**
+     * 
+     * @param codCapacitacion 
+     */
     public void setCodCapacitacion(Integer codCapacitacion) {
         this.codCapacitacion = codCapacitacion;
     }
@@ -123,6 +138,10 @@ public class Capacitacion implements Serializable {
         return fechaInicio;
     }
 
+    /**
+     * 
+     * @param fechaInicio 
+     */
     public void setFechaInicio(Date fechaInicio) {
         this.fechaInicio = fechaInicio;
     }
@@ -131,6 +150,10 @@ public class Capacitacion implements Serializable {
         return fechaFin;
     }
 
+    /**
+     * 
+     * @param fechaFin 
+     */
     public void setFechaFin(Date fechaFin) {
         this.fechaFin = fechaFin;
     }
@@ -139,6 +162,10 @@ public class Capacitacion implements Serializable {
         return estado;
     }
 
+    /**
+     * 
+     * @param estado 
+     */
     public void setEstado(String estado) {
         this.estado = estado;
     }
@@ -147,6 +174,10 @@ public class Capacitacion implements Serializable {
         return capacidad;
     }
 
+    /**
+     * 
+     * @param capacidad 
+     */
     public void setCapacidad(short capacidad) {
         this.capacidad = capacidad;
     }
@@ -155,6 +186,10 @@ public class Capacitacion implements Serializable {
         return capacitacionAlumnoList;
     }
 
+    /**
+     * 
+     * @param capacitacionAlumnoList 
+     */
     public void setCapacitacionAlumnoList(List<CapacitacionAlumno> capacitacionAlumnoList) {
         this.capacitacionAlumnoList = capacitacionAlumnoList;
     }
@@ -163,6 +198,10 @@ public class Capacitacion implements Serializable {
         return codCurso;
     }
 
+    /**
+     * 
+     * @param codCurso 
+     */
     public void setCodCurso(Curso codCurso) {
         this.codCurso = codCurso;
     }
@@ -171,10 +210,18 @@ public class Capacitacion implements Serializable {
         return codDocente;
     }
 
+    /**
+     * 
+     * @param codDocente 
+     */
     public void setCodDocente(Docente codDocente) {
         this.codDocente = codDocente;
     }
 
+    /**
+     * 
+     * @return 
+     */
     @Override
     public int hashCode() {
         int hash = 0;
@@ -182,6 +229,11 @@ public class Capacitacion implements Serializable {
         return hash;
     }
 
+    /**
+     * 
+     * @param object
+     * @return 
+     */
     @Override
     public boolean equals(Object object) {
         // TODO: Warning - this method won't work in the case the id fields are not set
@@ -195,9 +247,13 @@ public class Capacitacion implements Serializable {
         return true;
     }
 
+    /**
+     * 
+     * @return 
+     */
     @Override
     public String toString() {
         return "ec.edu.espe.EducaT.model.Capacitacion[ codCapacitacion=" + codCapacitacion + " ]";
     }
-    
+
 }

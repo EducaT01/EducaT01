@@ -136,7 +136,7 @@ public class ProgramaAlumno implements Serializable {
 
     /**
     * Metodo get para mostrar el atributo estado.
-    * @return estado.
+    * @return estado
     */
     public String getEstado() {
         return estado;
@@ -144,7 +144,7 @@ public class ProgramaAlumno implements Serializable {
 
     /**
     * Metodo set para modificar el atributo estado.
-    * @param estado.
+    * @param estado
     */
     public void setEstado(String estado) {
         this.estado = estado;
@@ -160,7 +160,7 @@ public class ProgramaAlumno implements Serializable {
     
     /**
     * Metodo set para modificar el atributo alumno.
-    * @param alumno.
+    * @param alumno
     */
     public void setAlumno(Alumno alumno) {
         this.alumno = alumno;
@@ -168,7 +168,7 @@ public class ProgramaAlumno implements Serializable {
 
     /**
     * Metodo get para mostrar el atributo programa.
-    * @return alumno.
+    * @return alumno
     */
     public Programa getPrograma() {
         return programa;
@@ -176,7 +176,7 @@ public class ProgramaAlumno implements Serializable {
 
     /**
     * Metodo set para modificar el atributo programa.
-    * @param alumno.
+    * @param programa
     */
     public void setPrograma(Programa programa) {
         this.programa = programa;
@@ -184,7 +184,7 @@ public class ProgramaAlumno implements Serializable {
     
     /**
     * Metodo hasCode sobreescrito.
-    * @return hash.
+    * @return hash
     */
     @Override
     public int hashCode() {
@@ -195,8 +195,8 @@ public class ProgramaAlumno implements Serializable {
         
     /**
     * Metodo sobreescrito equals.
-    * @param object.
-    * @return boolen.
+    * @param object
+    * @return boolen
     */
     @Override
     public boolean equals(Object object) {
@@ -213,7 +213,7 @@ public class ProgramaAlumno implements Serializable {
     
     /**
     * Metodo sobreescrito toString.
-    * @return cadena de caracteres.
+    * @return cadena de caracteres
     */
     @Override
     public String toString() {
