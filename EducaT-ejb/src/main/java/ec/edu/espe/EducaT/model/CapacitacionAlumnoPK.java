@@ -53,6 +53,11 @@ public class CapacitacionAlumnoPK implements Serializable {
     public CapacitacionAlumnoPK() {
     }
 
+    /**
+     * 
+     * @param codCapacitacion
+     * @param codAlumno 
+     */
     public CapacitacionAlumnoPK(int codCapacitacion, String codAlumno) {
         this.codCapacitacion = codCapacitacion;
         this.codAlumno = codAlumno;
@@ -62,6 +67,10 @@ public class CapacitacionAlumnoPK implements Serializable {
         return codCapacitacion;
     }
 
+    /**
+     * 
+     * @param codCapacitacion 
+     */
     public void setCodCapacitacion(int codCapacitacion) {
         this.codCapacitacion = codCapacitacion;
     }
@@ -70,10 +79,18 @@ public class CapacitacionAlumnoPK implements Serializable {
         return codAlumno;
     }
 
+    /**
+     * 
+     * @param codAlumno 
+     */
     public void setCodAlumno(String codAlumno) {
         this.codAlumno = codAlumno;
     }
 
+    /**
+     * 
+     * @return 
+     */
     @Override
     public int hashCode() {
         int hash = 0;
@@ -82,6 +99,11 @@ public class CapacitacionAlumnoPK implements Serializable {
         return hash;
     }
 
+    /**
+     * 
+     * @param object
+     * @return 
+     */
     @Override
     public boolean equals(Object object) {
         // TODO: Warning - this method won't work in the case the id fields are not set
@@ -98,6 +120,10 @@ public class CapacitacionAlumnoPK implements Serializable {
         return true;
     }
 
+    /**
+     * 
+     * @return 
+     */
     @Override
     public String toString() {
         return "ec.edu.espe.EducaT.model.CapacitacionAlumnoPK[ codCapacitacion=" + codCapacitacion + ", codAlumno=" + codAlumno + " ]";

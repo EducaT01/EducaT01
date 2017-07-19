@@ -105,10 +105,21 @@ public class Curso implements Serializable {
     public Curso() {
     }
 
+    /**
+     * 
+     * @param codCurso 
+     */
     public Curso(String codCurso) {
         this.codCurso = codCurso;
     }
 
+    /**
+     * 
+     * @param codCurso
+     * @param nombre
+     * @param duracion
+     * @param estado 
+     */
     public Curso(String codCurso, String nombre, short duracion, String estado) {
         this.codCurso = codCurso;
         this.nombre = nombre;
@@ -116,50 +127,98 @@ public class Curso implements Serializable {
         this.estado = estado;
     }
 
+    /**
+     * 
+     * @return 
+     */
     public String getCodCurso() {
         return codCurso;
     }
 
+    /**
+     * 
+     * @param codCurso 
+     */
     public void setCodCurso(String codCurso) {
         this.codCurso = codCurso;
     }
 
+    /**
+     * 
+     * @return 
+     */
     public String getNombre() {
         return nombre;
     }
 
+    /**
+     * 
+     * @param nombre 
+     */
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
+    /**
+     * 
+     * @return 
+     */
     public String getObjetivo() {
         return objetivo;
     }
 
+    /**
+     * 
+     * @param objetivo 
+     */
     public void setObjetivo(String objetivo) {
         this.objetivo = objetivo;
     }
 
+    /**
+     * 
+     * @return 
+     */
     public String getDescripcion() {
         return descripcion;
     }
 
+    /**
+     * 
+     * @param descripcion 
+     */
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
     }
 
+    /**
+     * 
+     * @return 
+     */
     public short getDuracion() {
         return duracion;
     }
 
+    /**
+     * 
+     * @param duracion 
+     */
     public void setDuracion(short duracion) {
         this.duracion = duracion;
     }
 
+    /**
+     * 
+     * @return 
+     */
     public String getEstado() {
         return estado;
     }
 
+    /**
+     * 
+     * @param estado 
+     */
     public void setEstado(String estado) {
         this.estado = estado;
     }

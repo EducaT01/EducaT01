@@ -138,7 +138,7 @@ public class CapacitacionAlumno implements Serializable {
     
     /**
     * Metodo set para modificar el atributo capacitacionAlumnoPK.
-    * @param capacitacionAlumnoPK.
+    * @param capacitacionAlumnoPK
     */
     public void setCapacitacionAlumnoPK(CapacitacionAlumnoPK capacitacionAlumnoPK) {
         this.capacitacionAlumnoPK = capacitacionAlumnoPK;
@@ -146,7 +146,7 @@ public class CapacitacionAlumno implements Serializable {
 
     /**
     * Metodo get para mostrar el atributo notaFinal.
-    * @return notaFinal.
+    * @return notaFinal
     */
     public BigDecimal getNotaFinal() {
         return notaFinal;
@@ -154,7 +154,7 @@ public class CapacitacionAlumno implements Serializable {
 
     /**
     * Metodo set para modificar el atributo notaFinal.
-    * @param notaFinal.
+    * @param notaFinal
     */
     public void setNotaFinal(BigDecimal notaFinal) {
         this.notaFinal = notaFinal;
@@ -162,7 +162,7 @@ public class CapacitacionAlumno implements Serializable {
 
     /**
     * Metodo get para mostrar el atributo estado.
-    * @return estado.
+    * @return estado
     */
     public String getEstado() {
         return estado;
@@ -170,7 +170,7 @@ public class CapacitacionAlumno implements Serializable {
 
     /**
     * Metodo set para modificar el atributo estado.
-    * @param estado.
+    * @param estado
     */
     public void setEstado(String estado) {
         this.estado = estado;
@@ -178,7 +178,7 @@ public class CapacitacionAlumno implements Serializable {
 
     /**
     * Metodo get para mostrar el atributo alumno.
-    * @return alumno.
+    * @return alumno
     */
     public Alumno getAlumno() {
         return alumno;
@@ -186,7 +186,7 @@ public class CapacitacionAlumno implements Serializable {
 
     /**
     * Metodo set para modificar el atributo alumno.
-    * @param alumno.
+    * @param alumno
     */
     public void setAlumno(Alumno alumno) {
         this.alumno = alumno;
@@ -194,7 +194,7 @@ public class CapacitacionAlumno implements Serializable {
 
     /**
     * Metodo get para mostrar el atributo capacitacion.
-    * @return capacitacion.
+    * @return capacitacion
     */
     public Capacitacion getCapacitacion() {
         return capacitacion;
@@ -202,7 +202,7 @@ public class CapacitacionAlumno implements Serializable {
 
     /**
     * Metodo set para modificar el atributo capacitacion.
-    * @param capacitacion.
+    * @param capacitacion
     */
     public void setCapacitacion(Capacitacion capacitacion) {
         this.capacitacion = capacitacion;
@@ -210,7 +210,7 @@ public class CapacitacionAlumno implements Serializable {
     
     /**
     * Metodo hasCode sobreescrito.
-    * @return hash.
+    * @return hash
     */
     @Override
     public int hashCode() {
@@ -221,8 +221,8 @@ public class CapacitacionAlumno implements Serializable {
     
     /**
     * Metodo sobreescrito equals.
-    * @param object.
-    * @return boolen.
+    * @param object
+    * @return boolen
     */
     @Override
     public boolean equals(Object object) {
@@ -239,7 +239,7 @@ public class CapacitacionAlumno implements Serializable {
     
     /**
     * Metodo sobreescrito toString.
-    * @return cadena de caracteres.
+    * @return cadena de caracteres
     */
     @Override
     public String toString() {
