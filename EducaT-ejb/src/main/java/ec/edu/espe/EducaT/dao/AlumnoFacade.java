@@ -21,10 +21,6 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-
-
-
-
 package ec.edu.espe.EducaT.dao;
 
 import ec.edu.espe.EducaT.model.Alumno;
