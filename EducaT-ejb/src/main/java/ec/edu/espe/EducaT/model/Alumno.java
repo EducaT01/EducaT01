@@ -45,7 +45,7 @@ import javax.validation.constraints.Size;
 /**
  * Clase encargada de obtener los datos de la base de datos EducaTBD.
  *
- * @author Adrián Calvopiña, Jonathan Almeida, David Suarez.
+ * @author Adrián, Jonathan, David.
  * @version 1.0
  */
 
