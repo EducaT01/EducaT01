@@ -107,47 +107,80 @@ public class Docente implements Serializable {
         this.telefono = telefono;
         this.correoElectronico = correoElectronico;
     }
-
+    /**
+    * Metodo que devuelve el codigo del docente.
+    * @return 
+    */
     public String getCodDocente() {
         return codDocente;
     }
-
+    /**
+     * Metodo que ingresa el codigo de docente.
+     * @param codDocente 
+     */
     public void setCodDocente(String codDocente) {
         this.codDocente = codDocente;
     }
-
+    /**
+     * Metodo que obtiene el nombre del docente.
+     * @return 
+     */
     public String getNombre() {
         return nombre;
     }
-
+    /**
+     * metodo que ingresa el nombre del docente.
+     * @param nombre 
+     */
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
-
+    /**
+     * Metodo que devuelve la direccion del docente.
+     * @return 
+     */
     public String getDireccion() {
         return direccion;
     }
-
+    /**
+     * Metodo que ingresa la direccion del docente.
+     * @param direccion 
+     */
     public void setDireccion(String direccion) {
         this.direccion = direccion;
     }
-
+    /**
+     * metodo que obtiene el telefono del docente.
+     * @return 
+     */
     public String getTelefono() {
         return telefono;
     }
-
+    /**
+     * Meodo que pone el telefono del doecnte.
+     * @param telefono 
+     */
     public void setTelefono(String telefono) {
         this.telefono = telefono;
     }
-
+    /**
+     * Metodo que obtiene el correo del docente.
+     * @return 
+     */
     public String getCorreoElectronico() {
         return correoElectronico;
     }
-
+    /**
+     * Metodo que pone el correo electronico del docente.
+     * @param correoElectronico 
+     */
     public void setCorreoElectronico(String correoElectronico) {
         this.correoElectronico = correoElectronico;
     }
-
+    /**
+     * Metodo que obtiene la lista de capacitaciones que estan asignados los docentes.
+     * @return 
+     */
     public List<Capacitacion> getCapacitacionList() {
         return capacitacionList;
     }
